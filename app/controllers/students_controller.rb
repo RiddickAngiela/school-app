@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
 
   # GET /students/new
   def new
-    byebug
+    # byebug
     @student = Student.new
   end
 
