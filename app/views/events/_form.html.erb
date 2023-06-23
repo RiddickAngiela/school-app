@@ -11,37 +11,31 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class='field form-group'>
+    <%= form.text_field :name, class:"form-control", placeholder:"Name" %>
+  </div>
+
+  <div class='field form-group'>
+    <%= form.text_field :venue, class:"form-control", placeholder:"Venue" %>
+  </div>
+
+  <div class='field form-group'>
+    <%= form.number_field :time, class:"form-control", placeholder:"Time" %>
+  </div>
+
+  <div class='field form-group'>
+    <%= form.text_field :description, class:"form-control", placeholder:"Description" %>
+  </div>
+
+  <div class='field form-group'>
+    <%= form.text_field :members_involved, class:"form-control", placeholder:"Members Involved" %>
+  </div>
+
+  <div class='field form-group'>
+    <%= form.text_field :sponsors, class:"form-control", placeholder:"Sponsors" %>
   </div>
 
   <div>
-    <%= form.label :venue, style: "display: block" %>
-    <%= form.text_field :venue %>
-  </div>
-
-  <div>
-    <%= form.label :time, style: "display: block" %>
-    <%= form.number_field :time %>
-  </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :members_involved, style: "display: block" %>
-    <%= form.text_field :members_involved %>
-  </div>
-
-  <div>
-    <%= form.label :sponsors, style: "display: block" %>
-    <%= form.text_field :sponsors %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-seconadry" %>
   </div>
 <% end %>
