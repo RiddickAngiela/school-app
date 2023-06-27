@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'co_curricular/activities'
+  get 'admissions/admin'
   devise_for :users
   get 'academics/index'
   resources :events

@@ -1,0 +1,2 @@
+module CoCurricularHelper
+end
